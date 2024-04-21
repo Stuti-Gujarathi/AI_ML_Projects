@@ -1,0 +1,5 @@
+Additional Python Libraries Required :
+  OpenCV:
+       pip install opencv-python
+  Argparse:
+       pip install argparse
