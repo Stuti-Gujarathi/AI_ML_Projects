@@ -1,0 +1,12 @@
+<aiml version="1.0.1" encoding="UTF-8">
+    <!-- Loads every AIML file when the bot receives "LOAD AIML B" -->
+    <category>
+        <pattern>LOAD AIML B</pattern>
+        <template>
+            <learn>aiml_files/basic_chat.aiml</learn>
+            <learn>aiml_files/tech_faq.aiml</learn>
+            <learn>aiml_files/smalltalk.aiml</learn>
+            <learn>aiml_files/memory.aiml</learn>
+        </template>
+    </category>
+</aiml>

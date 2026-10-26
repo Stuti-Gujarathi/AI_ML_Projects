@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="1.0.1" encoding="UTF-8">
+
+    <category>
+        <pattern>TELL ME A JOKE</pattern>
+        <template>
+            <random>
+                <li>Why do programmers prefer dark mode? Because light attracts bugs.</li>
+                <li>There are 10 types of people: those who understand binary and those who don't.</li>
+                <li>A SQL query walks into a bar, sees two tables and asks: "Can I join you?"</li>
+                <li>Why did the developer go broke? Because he used up all his cache.</li>
+            </random>
+        </template>
+    </category>
+    <category><pattern>JOKE</pattern><template><srai>TELL ME A JOKE</srai></template></category>
+    <category><pattern>MAKE ME LAUGH</pattern><template><srai>TELL ME A JOKE</srai></template></category>
+
+    <category>
+        <pattern>WHAT TIME IS IT</pattern>
+        <template>Sorry, I don't have a clock. Check your device!</template>
+    </category>
+
+    <category>
+        <pattern>DO YOU LIKE *</pattern>
+        <template>I think <star/> sounds interesting! Why do you ask?</template>
+    </category>
+
+    <category>
+        <pattern>I AM FEELING *</pattern>
+        <template>Why are you feeling <star/>?</template>
+    </category>
+    <category>
+        <pattern>I FEEL *</pattern>
+        <template><srai>I AM FEELING <star/></srai></template>
+    </category>
+
+    <category>
+        <pattern>I LOVE *</pattern>
+        <template>That's great! What do you love most about <star/>?</template>
+    </category>
+
+    <category>
+        <pattern>ARE YOU A ROBOT</pattern>
+        <template>I'm a software chatbot built with AIML, so yes, in a way.</template>
+    </category>
+    <category>
+        <pattern>WHO CREATED YOU</pattern>
+        <template>I was created as an AIML chatbot project using Python.</template>
+    </category>
+</aiml>

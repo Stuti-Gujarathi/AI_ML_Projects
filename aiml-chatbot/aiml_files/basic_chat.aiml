@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="1.0.1" encoding="UTF-8">
+
+    <!-- Greetings -->
+    <category>
+        <pattern>HELLO</pattern>
+        <template>
+            <random>
+                <li>Hello! How can I help you today?</li>
+                <li>Hi there! What would you like to talk about?</li>
+                <li>Hey! Great to see you.</li>
+            </random>
+        </template>
+    </category>
+
+    <category><pattern>HI</pattern><template><srai>HELLO</srai></template></category>
+    <category><pattern>HEY</pattern><template><srai>HELLO</srai></template></category>
+    <category><pattern>HELLO *</pattern><template><srai>HELLO</srai></template></category>
+    <category><pattern>HI *</pattern><template><srai>HELLO</srai></template></category>
+    <category><pattern>GOOD MORNING</pattern><template>Good morning! Hope you have a productive day.</template></category>
+    <category><pattern>GOOD EVENING</pattern><template>Good evening! How was your day?</template></category>
+    <category><pattern>GOOD NIGHT</pattern><template>Good night! See you soon.</template></category>
+
+    <!-- Bot identity -->
+    <category>
+        <pattern>WHAT IS YOUR NAME</pattern>
+        <template>My name is <bot name="name"/>. I am a chatbot written in AIML.</template>
+    </category>
+    <category><pattern>WHO ARE YOU</pattern><template><srai>WHAT IS YOUR NAME</srai></template></category>
+    <category><pattern>YOUR NAME</pattern><template><srai>WHAT IS YOUR NAME</srai></template></category>
+
+    <category>
+        <pattern>HOW ARE YOU</pattern>
+        <template>
+            <random>
+                <li>I'm doing great, thanks for asking! How about you?</li>
+                <li>All systems running smoothly. How are you?</li>
+            </random>
+        </template>
+    </category>
+    <category><pattern>HOW ARE YOU *</pattern><template><srai>HOW ARE YOU</srai></template></category>
+
+    <category>
+        <pattern>WHAT CAN YOU DO</pattern>
+        <template>I can chat, answer basic programming and AI questions, remember your name, tell jokes and more. Try "tell me a joke" or "what is AIML".</template>
+    </category>
+    <category><pattern>HELP</pattern><template><srai>WHAT CAN YOU DO</srai></template></category>
+
+    <!-- Polite phrases -->
+    <category><pattern>THANK YOU</pattern><template>You're welcome!</template></category>
+    <category><pattern>THANKS</pattern><template><srai>THANK YOU</srai></template></category>
+    <category><pattern>THANKS *</pattern><template><srai>THANK YOU</srai></template></category>
+    <category><pattern>BYE</pattern><template>Goodbye! Have a great day.</template></category>
+    <category><pattern>GOODBYE</pattern><template><srai>BYE</srai></template></category>
+    <category><pattern>SEE YOU *</pattern><template><srai>BYE</srai></template></category>
+
+    <!-- Yes / No -->
+    <category><pattern>YES</pattern><template>Great! Tell me more.</template></category>
+    <category><pattern>NO</pattern><template>Okay, no problem.</template></category>
+
+    <!-- Fallback -->
+    <category>
+        <pattern>*</pattern>
+        <template>
+            <random>
+                <li>I'm not sure I understand. Could you rephrase that?</li>
+                <li>Interesting! I don't know much about that yet. Try asking something else.</li>
+                <li>Sorry, I don't have an answer for that. Type HELP to see what I can do.</li>
+            </random>
+        </template>
+    </category>
+</aiml>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="1.0.1" encoding="UTF-8">
+
+    <!-- Learn the user's name -->
+    <category>
+        <pattern>MY NAME IS *</pattern>
+        <template>Nice to meet you, <set name="username"><star/></set>!</template>
+    </category>
+    <category><pattern>I AM *</pattern><template><srai>MY NAME IS <star/></srai></template></category>
+    <category><pattern>CALL ME *</pattern><template><srai>MY NAME IS <star/></srai></template></category>
+
+    <category>
+        <pattern>WHAT IS MY NAME</pattern>
+        <template>
+            <condition name="username">
+                <li value="unknown">I don't know your name yet. Tell me with "My name is ...".</li>
+                <li>Your name is <get name="username"/>.</li>
+            </condition>
+        </template>
+    </category>
+    <category><pattern>WHO AM I</pattern><template><srai>WHAT IS MY NAME</srai></template></category>
+
+    <!-- Learn favourite things -->
+    <category>
+        <pattern>MY FAVORITE LANGUAGE IS *</pattern>
+        <template>Cool! <set name="lang"><star/></set> is a great choice.</template>
+    </category>
+    <category>
+        <pattern>WHAT IS MY FAVORITE LANGUAGE</pattern>
+        <template>You told me it is <get name="lang"/>.</template>
+    </category>
+</aiml>

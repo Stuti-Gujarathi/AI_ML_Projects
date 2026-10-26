@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="1.0.1" encoding="UTF-8">
+
+    <category>
+        <pattern>WHAT IS AIML</pattern>
+        <template>AIML (Artificial Intelligence Markup Language) is an XML-based language used to create chatbots. It matches user input patterns to response templates.</template>
+    </category>
+
+    <category>
+        <pattern>WHAT IS AI</pattern>
+        <template>Artificial Intelligence is the field of building machines that can perform tasks that normally require human intelligence, such as learning, reasoning and understanding language.</template>
+    </category>
+    <category><pattern>WHAT IS ARTIFICIAL INTELLIGENCE</pattern><template><srai>WHAT IS AI</srai></template></category>
+
+    <category>
+        <pattern>WHAT IS MACHINE LEARNING</pattern>
+        <template>Machine learning is a subset of AI where systems learn patterns from data instead of being explicitly programmed.</template>
+    </category>
+    <category><pattern>WHAT IS ML</pattern><template><srai>WHAT IS MACHINE LEARNING</srai></template></category>
+
+    <category>
+        <pattern>WHAT IS DEEP LEARNING</pattern>
+        <template>Deep learning uses multi-layer neural networks to learn complex patterns from large amounts of data, powering image recognition, speech and language models.</template>
+    </category>
+
+    <category>
+        <pattern>WHAT IS NLP</pattern>
+        <template>Natural Language Processing (NLP) lets computers understand, interpret and generate human language.</template>
+    </category>
+
+    <category>
+        <pattern>WHAT IS A CHATBOT</pattern>
+        <template>A chatbot is a program that simulates conversation with users through text or voice.</template>
+    </category>
+
+    <category>
+        <pattern>WHAT IS PYTHON</pattern>
+        <template>Python is a high-level, readable programming language widely used in AI, data science and web development.</template>
+    </category>
+
+    <category>
+        <pattern>WHAT IS CSHARP</pattern>
+        <template>C# is a modern, object-oriented language from Microsoft, commonly used with .NET for web, desktop and cloud applications.</template>
+    </category>
+    <category><pattern>WHAT IS C SHARP</pattern><template><srai>WHAT IS CSHARP</srai></template></category>
+
+    <category>
+        <pattern>WHAT IS AN API</pattern>
+        <template>An API (Application Programming Interface) is a set of rules that lets different software applications talk to each other.</template>
+    </category>
+    <category><pattern>WHAT IS API</pattern><template><srai>WHAT IS AN API</srai></template></category>
+
+    <category>
+        <pattern>WHAT IS SQL</pattern>
+        <template>SQL (Structured Query Language) is used to store, query and manage data in relational databases.</template>
+    </category>
+
+    <category>
+        <pattern>WHAT IS CLOUD COMPUTING</pattern>
+        <template>Cloud computing delivers computing resources such as servers, storage and databases over the internet on a pay-as-you-go basis, for example Azure or AWS.</template>
+    </category>
+
+    <!-- Generic "what is X" fallback -->
+    <category>
+        <pattern>WHAT IS *</pattern>
+        <template>I don't have a definition for "<star/>" yet. You can teach me by adding a category in aiml_files/tech_faq.aiml.</template>
+    </category>
+    <category><pattern>EXPLAIN *</pattern><template><srai>WHAT IS <star/></srai></template></category>
+    <category><pattern>DEFINE *</pattern><template><srai>WHAT IS <star/></srai></template></category>
+</aiml>
